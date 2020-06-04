@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Joanna Yee's Portfolio</title>
+    <meta name="description" content="This is Joanna Yee's Portfolio" />
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+
+  
+    <!-- MAIN CSS FILE -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+
+<body>
+
+    <header class="site-header fade-in-and-down">
+        <div class="site-identity">
+            <a href="index.html"><img class="logo" src="img/sitelogo.svg" alt="Joanna" width="60" height="20"></a>
+            <h1><a href="index.html">Joanna Yee</a></h1> 
+        </div>
+
+    
+        <nav class="site-navigation">
+            <ul>
+                <li><a class= "scroll" href="#work" class="selected">Work</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+        <section class="home wrapper fade-in-and-down">
+            <div class="carousel">
+                <div class="slides">
+                  <a href="./bookcovers/index.html" class="book"></a>
+
+                  <a href="./soshawaii/index.html"  class="slide"></a>  
+        
+                  <!-- <a href="/soshawaii/index.html"  class="slide"></a> -->
+                </div>
+                <div class="controls">
+                  <div class="control prev-slide">&#9668;</div>
+                  <div class="control next-slide">&#9658;</div>
+
+                </div>
+              </div>
+        </section>
+        </div>
+<section>
+         <div class="Iam">
+
+            <p>I am</p>
+            <b>
+              <div class="innerIam">
+               a designer <br /> 
+               a illustrator<br />
+               <br />
+                <br />
+                a creative thinker
+                </div>
+            </b>
+            
+            </div>
+        
+        </section>
+    </div>
+
+        <div class="mixcontainer group">   
+            <section id="work" class="text-centered">
+                
+                <div class="mixcontrols">
+                    <button class="filter alt fade-and-move-in" data-filter="all">All</button>
+                    <button class="filter alt fade-and-move-in" data-filter=".print">Print</button>
+                    <button class="filter alt fade-and-move-in" data-filter=".motion">Motion</button>
+                </div>
+
+                <div class="thumbgrid mixcontainer fade-and-move-in">
+                    <a href="./bangkok/index.html" class="mix print" title="Bangkok | Print"><img src="./img/citylogothumbnail.png" alt="Bangkok"/></a>
+                    <a href="./soshawaii/index.html" class="mix print" title="Soshawaii | Print"><img src="./img/soshawaii.png" alt="soshawaii"/></a>
+                    <a href="./bookcovers/index.html" class="mix print" title="Bookcover Trilogy | Print"><img src="./img/booktrilogy.png" alt="Book covers"/></a>
+                    <a href="./logosbookstore/index.html" class="mix print" title="Logos Bookstore | Print"><img src="./logosbookstore/img/logos.png" alt="bookstore"/></a>
+                    <a href="./kobayashikiyochika/index.html" class="mix  print" title="Brochure | Print"><img src="./kobayashikiyochika/img/brochure1.png" alt="brochure"/></a>
+                    <a href="./happea/index.html" class="mix print" title="Happea | Print"><img src="img/happea.png" alt="happea"/></a>
+                    <a href="rotoscope/index.html" class="mix motion" title="Rotoscope | Motion"><img src="img/rotoscope.png" alt="Rotoscope"/></a>
+
+                </div>
+            </section>
+        </div>
+               
+    </main>
+
+    <footer class="site-footer">
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+<!-- JAVASCRIPT -->
+<script src="js/mixitup.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // MIXITUP
+        var containerEl = document.querySelector(".mixcontainer");
+        var mixer = mixitup(containerEl);
+    });
+ </script>
+ <script src="js/slider.js"></script>
+ <script src="js/scroll.js"></script>
+
+</body>
+
+</html>
